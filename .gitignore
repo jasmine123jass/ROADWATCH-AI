@@ -1,0 +1,30 @@
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local database
+pothole_database.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+.DS_Store
+Thumbs.db
+*.log
+
+# Dataset - do not upload the full dataset
+data/
+
+# Training outputs - retain only the final model
+runs/*
+!runs/pothole_yolov8n/
+runs/pothole_yolov8n/*
+!runs/pothole_yolov8n/weights/
+runs/pothole_yolov8n/weights/*
+!runs/pothole_yolov8n/weights/best.pt
+
+# Secrets
+.env
+.streamlit/secrets.toml
